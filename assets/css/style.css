@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "THICCCBOI";
+    src: url("../font/THICCCBOI-Black.ttf");
+}
+
+@font-face {
+    font-family: "THICCCBOI";
+    src: url("../font/THICCCBOI-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "THICCCBOI";
+    src: url("../font/THICCCBOI-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "THICCCBOI";
+    src: url("../font/THICCCBOI-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "THICCCBOI";
+    src: url("../font/THICCCBOI-Medium.ttf");
+    font-weight:500;
+}
+
+@font-face {
+    font-family: "THICCCBOI";
+    src: url("../font/THICCCBOI-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "THICCCBOI";
+    src: url("../font/THICCCBOI-SemiBold.ttf");
+    font-weight: 600;
+}
+
+* {
+    font-family: "THICCCBOI", sans-serif;
+}
+.box-1{
+    background: linear-gradient(259.08deg, #50EDFF -5.05%, #48B8DA 63.97%, #3B5998 130.42%);
+}
