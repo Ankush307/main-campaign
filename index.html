@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main Campaign</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -19,9 +25,6 @@
           },
         },
         extend: {
-          colors: {
-            clifford: '#da373d',
-          }
         }
       }
     }
@@ -29,8 +32,10 @@
 </head>
 
 <body>
+  <!-- Hero section -->
   <section class="relative z-10">
-    <img class="absolute right-0" src="./assets/image/webp/hero-bg-img.webp" alt="hero img">
+    <img class="absolute top-0 max-sm:h-[500px] right-0 max-sm:h-9/12 -z-10 max-w-[1317px] w-full "
+      src="./assets/image/webp/hero-bg-img.webp" alt="hero img">
     <div class="container relative z-10">
       <header class="pt-[40px] lg:pt-[76px]">
         <nav class="flex items-center justify-between">
@@ -45,160 +50,156 @@
         </nav>
       </header>
     </div>
-    <div class="container relative z-10 flex flex-col items-center text-center px-4">
-      <h1 class="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] leading-[118%] pt-10 sm:pt-20">
-        The Most Powerful Offline Lead Conversion Data for your
-        <span class="text-white">Business.</span>
-      </h1>
-      <p class="text-center text-white leading-[115%] pt-4 text-base sm:text-lg lg:text-xl">
-        Seamless integration with your CRM and Facebook
-      </p>
-
-      <form>
-        <input type="email"
-          class="bg-white border border-[#E1E1FF] outline-none w-full lg:w-[500px] mb-2 rounded-full py-3 sm:py-4 px-4 mt-8 sm:mt-10"
-          placeholder="Enter your work email">
-      </form>
-
-      <div class=" min-h-[600px] lg:min-h-[1100px] mt-8 lg:mt-0 z-30">
-        <img
-          class="absolute top-[30%] w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[600px] xl:max-h-[993px] left-0 xl:left-[-10%]"
-          src="./assets/image/webp/hero-upper.webp" alt="hero img">
-        <img
-          class="absolute top-[50%] w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[600px] xl:max-h-[993px] left-0 xl:right-[-5%]"
-          src="./assets/image/webp/hero-lower.webp" alt="hero img">
+    <div
+      class="container px-3 pb-28 max-xl:pb-24 max-lg:pb-20 max-md:pb-16 max-sm:pb-14 pt-20 max-sm:pt-5 mt-5  mx-auto">
+      <h1
+        class="text-black text-[80px] max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl leading-[120%] text-center font-bold text">
+        The Most Powerful Offline Lead Conversion Data for your <span class="text-white"> Business.</samp></h1>
+      <p class="font-normal pb-10 text-white text-xl max-lg:text-xl max-sm:text-base text-center">Seamless integration
+        with your CRM and Facebook</p>
+      <div class="max-w-[570px] max-lg:justify-normal max-lg:items-center  max-lg:flex -mt-0.5 w-full mx-auto">
+        <input type="email" placeholder="Enter you work email"
+          class="placeholder:text-venus  placeholder:text-xl max-lg:w-9/12  placeholder:font-medium placeholder:leading-[150%] w-full px-4 rounded-[60px] text-xl  mx-auto py-5 max-lg:py-4 max-md:py-3 outline-none">
       </div>
     </div>
+    <div
+      class="md:min-h-[800px] w-full max-w-[1485px] max-md:justify-center max-md:flex max-md:items-center max-md:flex-col mx-auto relative">
+      <img src="./assets/image/webp/hero-upper.webp" alt="welcome-back"
+        class="md:absolute max-md:w-9/12 top-0 left-0 max-w-[963px] w-full">
+      <img src="./assets/image/webp/hero-lower.webp" alt="table"
+        class="md:absolute max-md:w-9/12 right-0 bottom-0 max-w-[963px] w-full">
+
+    </div>
   </section>
-  <section>
-    <div class="container relative z-10 justify-center flex flex-col items-center">
-      <h2
-        class="font-bold xl:text-[65px] lg:text-5xl sm:text-4xl text-2xl text-center max-w-[900px] mb-8 leading-[116%]">
-        See your revenue grow in
-        real time with our dashboards.</h2>
-      <div class="flex items-center gap-4 mb-8 overflow-x-auto max-w-full px-2 sm:px-0">
-        <p
-          class="min-w-[120px] sm:min-w-[177px] text-sm sm:text-[22px] font-bold leading-[110%] py-3 sm:py-5 px-5 sm:px-8 bg-[#3B5998] text-white rounded-full cursor-pointer">
-          CRM Integrations
-        </p>
-        <p
-          class="min-w-[150px] sm:min-w-[291px] text-sm sm:text-[22px] font-medium leading-[110%] py-3 sm:py-5 px-5 sm:px-8 bg-[#FAF9F6] border-2 border-[#3B5998] hover:bg-[#3b5998] hover:border-[#7D889E] text-[#7D889E] rounded-full cursor-pointer">
-          Marketing Platform Integrations
-        </p>
-        <p
-          class="min-w-[83px] text-sm sm:text-[22px] font-medium leading-[110%] py-3 sm:py-5 px-5 sm:px-8 bg-[#FAF9F6] border-2 border-[#3B5998] text-[#7D889E] hover:bg-[#3b5998] hover:border-[#7D889E] rounded-full cursor-pointer">
-          Analytics
-        </p>
-        <p
-          class="min-w-[120px] sm:min-w-[177px] text-sm sm:text-[22px] font-medium leading-[110%] py-3 sm:py-5 px-5 sm:px-8 bg-[#FAF9F6] border-2 border-[#3B5998] hover:bg-[#3b5998] hover:border-[#7D889E] text-[#7D889E] rounded-full cursor-pointer">
-          Easy, Safe and Secured
-        </p>
+  <!-- See your revenue grow  -->
+  <section class="py-14 max-sm:py-7 overflow-hidden px-3">
+    <div class="container mx-auto ">
+      <div class="max-w-[1000px] mx-auto">
+        <h1
+          class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+          See your revenue grow in
+          real time with our dashboards.</h1>
       </div>
-      <div class="box-1 rounded-[48px] pt-2 mt-3 mb-28">
-        <div class="box bg-white py-14 pl-10 pr-[60px] relative shadow-2xl rounded-[48px]">
-          <img class="pointer-events-none -z-10 absolute top-[-16%] 2xl:right-[-4%] hidden"
-            src="./assets/image/svg/upper-arrow.svg" alt="arrow">
-          <img class="pointer-events-none -z-10  absolute bottom-[-16%] left-[-4%] hidden"
-            src="./assets/image/svg/lower-arrow.svg" alt="arrow">
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[1200px] text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[1200px] font-medium text-lg leading-[155%]">Sed ut perspiciatis unde omnis iste natus error
-              sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-          </div>
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[1200px] font-medium text-lg leading-[155%]">Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[1144px] font-medium text-lg leading-[155%]">Ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-          </div>
-          <div class="flex  items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[1200px] font-medium text-lg leading-[155%]">Euis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div
+        class="max-w-[1140px] lg:justify-center mt-8 max-lg:mt-6 max-sm:mt-4 gap-5 mx-auto flex items-center overflow-x-auto">
+        <button
+          class="py-5 px-8 max-2xl:min-w-[241px] font-bold bg-[#3B5998] text-white rounded-[60px] max-xl:text-xl max-lg:text-lg max-md:text-base text-22px">CRM
+          Integrations</button>
+        <button
+          class="py-4 px-6 min-w-[337px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-[#3B5998] hover:bg-opacity-50 hover:text-white transition-all duration-300 max-xl:text-lg max-lg:text-base max-sm:text-sm">Marketing
+          Platform Integrations</button>
+        <button
+          class="py-4 px-7 min-w-[143px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-[#3B5998] hover:bg-opacity-50 hover:text-white transition-all duration-300 max-xl:text-lg max-lg:text-base max-sm:text-sm">Analytics</button>
+        <button
+          class="py-4 px-6 min-w-[265px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-[#3B5998] hover:bg-opacity-50 hover:text-white transition-all duration-300 max-xl:text-lg max-lg:text-base max-sm:text-sm">Easy,
+          Safe and Secured</button>
+      </div>
+      <div
+        class="max-w-[1297px] pt-1 mt-7 relative mx-auto min-h-[467px] flex items-end shadow- bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-[48px] w-full">
+        <img src="./assets/image/svg/down-arrow.svg" alt="down-arrow"
+          class="absolute max-sm:hidden bottom-[-13%] -z-10 left-[-4%]">
+        <img src="./assets/image/svg/up-arow.svg" alt="up-arow"
+          class="absolute max-sm:hidden top-[-13%] max-2xl:right-[-1.5%] right-[-4.5%] -z-10">
+        <div class="w-full px-5 bg-white max-lg:py-6 flex justify-center items-center min-h-[459px] rounded-[48px]">
+          <div class="max-w-[1196px] gap-y-6 flex flex-col mx-auto">
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-normal">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Euis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="container relative justify-center flex flex-col items-center">
-      <h2
-        class="font-bold xl:text-[65px] lg:text-5xl sm:text-4xl text-2xl text-center max-w-[900px] leading-[116%] mb-7">
-        Marketing analytics that REALLY
-        matter</h2>
-      <div class=" min-h-[1000px] mx-auto">
-        <img class="absolute top-[20%] xl:max-w-[988px] pointer-events-none left-0 max-w-full xl:left-[15%]"
-          src="./assets/image/webp/graph.webp" alt="graph">
+  <!-- Marketing analytics -->
+  <section class="py-14 max-sm:py-7 px-3">
+    <div class="container mx-auto ">
+      <div class="max-w-[790px] mb-5 mx-auto">
+        <h1
+          class="text-black text-[65px] max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+          Marketing analytics that REALLY matter</h1>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container justify-center flex flex-col items-center ">
-      <div class="flex items-center gap-4 mb-8 overflow-x-auto max-w-full sm:max-w-[1034px] px-2 sm:px-0">
-        <p
-          class="min-w-[100px] sm:min-w-[150px] text-sm sm:text-[22px] font-bold leading-[110%] py-3 sm:py-5 px-4 sm:px-8 border-2 bg-[#3B5998] text-white hover:border-[#3B5998] rounded-full cursor-pointer">
-          Spendings
-        </p>
-        <p
-          class="min-w-[100px] sm:min-w-[150px] text-sm sm:text-[22px] font-medium leading-[110%] py-3 sm:py-5 px-4 sm:px-8 bg-[#FAF9F6] border-2 border-[#3B5998] text-[#7D889E] rounded-full cursor-pointer">
-          Reach
-        </p>
-        <p
-          class="min-w-[100px] sm:min-w-[150px] text-sm sm:text-[22px] font-medium leading-[110%] py-3 sm:py-5 px-4 sm:px-8 bg-[#FAF9F6] border-2 border-[#3B5998] text-[#7D889E] rounded-full cursor-pointer">
-          Revenue
-        </p>
-        <p
-          class="min-w-[120px] sm:min-w-[177px] text-sm sm:text-[22px] font-medium leading-[110%] py-3 sm:py-5 px-4 sm:px-8 bg-[#FAF9F6] border-2 border-[#3B5998] text-[#7D889E] rounded-full cursor-pointer">
-          Inbound Leads
-        </p>
-        <p
-          class="min-w-[100px] sm:min-w-[150px] text-sm sm:text-[22px] font-medium leading-[110%] py-3 sm:py-5 px-4 sm:px-8 bg-[#FAF9F6] border-2 border-[#3B5998] text-[#7D889E] rounded-full cursor-pointer">
-          Campaigns
-        </p>
+      <div class="relative">
+        <img src="./assets/image/webp/welcome-back.webp" alt="welcome back"
+          class="max-w-[988px] max-sm:w-9/12 mx-auto w-full">
+        <img src="./assets/image/webp/countries-map.webp" alt="countries map"
+          class="absolute left-[42%] max-w-[673px] -translate-x-1/2 shadow-image-shadow hidden lg:block rounded-[10px] bottom-[-6%]">
+        <img src="/assets/image/webp/cost-graph.webp" alt="cost graph"
+          class="absolute top-[22%] max-w-[244px] shadow-image-shadow rounded-[10px] hidden lg:block right-[12%]">
       </div>
+      <div
+        class="max-w-[1140px] lg:justify-center mt-16 p-2 max-lg:mt-6 max-sm:mt-4 gap-5 mx-auto flex items-center overflow-x-auto">
+        <button
+          class="py-5 px-8 max-2xl:min-w-[161px] font-bold bg-[#3B5998] text-white rounded-[60px] max-xl:text-xl max-lg:text-lg max-md:text-base text-22px">Spending</button>
+        <button
+          class="py-4 px-6 min-w-[112px] font-medium bg-[#FAF9F6] text-[#7D889E] rounded-[60px] border border-solid border-[#D9D9D9] text-xl leading-[110%] hover:bg-[#3B5998] hover:bg-opacity-50 hover:text-white transition-all duration-300 max-xl:text-lg max-lg:text-base max-sm:text-sm">Reach</button>
+        <button
+          class="py-4 px-7 min-w-[123px] font-medium bg-[#FAF9F6] text-[#7D889E] rounded-[60px] border border-solid border-[#D9D9D9] text-xl leading-[110%] hover:bg-[#3B5998] hover:bg-opacity-50 hover:text-white transition-all duration-300 max-xl:text-lg max-lg:text-base max-sm:text-sm">Revenue</button>
+        <button
+          class="py-4 px-6 min-w-[180px] font-medium bg-[#FAF9F6] text-[#7D889E] rounded-[60px] border border-solid border-[#D9D9D9] text-xl leading-[110%] hover:bg-[#3B5998] hover:bg-opacity-50 hover:text-white transition-all duration-300 max-xl:text-lg max-lg:text-base max-sm:text-sm">Inbound
+          Leads</button>
+        <button
+          class="py-4 px-6 min-w-[154px] font-medium bg-[#FAF9F6] text-[#7D889E] rounded-[60px] border border-solid border-[#D9D9D9] text-xl leading-[110%] hover:bg-[#3B5998] hover:bg-opacity-50 hover:text-white transition-all duration-300 max-xl:text-lg max-lg:text-base max-sm:text-sm">Campaigns</button>
+      </div>
+      <div
+        class="max-w-[1123px] pt-1 mt-7 relative mx-auto min-h-[320px] flex items-end shadow--shadow bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-[48px] w-full">
+        <img src="./assets/image/svg/down-arrow.svg" alt="down-arrow"
+          class="absolute max-md:hidden bottom-[-18%] left-[88%] -z-10">
 
-      <div class="box-1 rounded-[48px] pt-2 mt-3 mb-28">
-        <div class="box bg-white py-14 pl-10 pr-[60px] relative shadow-2xl rounded-[48px]">
-          <img class="pointer-events-none -z-10  absolute bottom-[-17%] left-[80%]  max-lg:hidden"
-            src="./assets/image/svg/lower-arrow.svg" alt="arrow">
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[999px] text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[1200px] font-medium text-lg leading-[155%]">Sed ut perspiciatis unde omnis iste natus error
-              sit voluptatem accusantium doloremque laudantium. </p>
-          </div>
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[1200px] font-medium text-lg leading-[155%]">Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-          <div class="flex pb-6 items-start">
-            <img class="pt-1.5 pr-5" src="./assets/image/svg/check-icon.svg" alt="check icon">
-            <p class="max-w-[999px] font-medium text-lg leading-[155%]">Ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <div class="w-full px-5 bg-white max-lg:py-6 flex justify-center items-center min-h-[314px] rounded-[48px]">
+          <div class="max-w-[1196px] gap-y-6 flex flex-col mx-auto">
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium.o. </p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="./assets/image/svg/check-icon.svg" alt="checked" class="mt-1.5">
+              <p class="text-lg max-lg:text-base text-dark font-bold">Ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Main Campaign Sync Works -->
   <section>
     <div class="max-w-[1720px] mx-auto justify-center flex flex-col items-center">
       <h4 class="font-bold xl:text-[65px] lg:text-5xl sm:text-4xl text-2xl text-center mb-8 leading-[116%]">How <span
@@ -248,81 +249,340 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="container justify-center flex flex-col items-center">
-      <h2
-        class="font-bold xl:text-[65px] lg:text-5xl sm:text-4xl text-2xl text-center mb-8 leading-[116%] max-w-[991px]">
-        Understand <span class="text-[#3B5998]">how many sales</span> are driven from your campaigns</h2>
-      <div class="row-auto flex items-center">
-        <div class="w-6/12">
-          <p class="text-xl font-medium leading-[140%] pb-5 pt-14">The issue with tracking marketing data in an online
-            setting is
-            that you’re not getting the full picture.
-            Although you’re still making sales offline. it’s nearly impossible to track exactly what online campaigns
-            are
-            doin the job, and which ones aren’t...until now.</p>
-          <p class="text-xl font-medium leading-[140%] pb-14 max-w-[600px]">With Main Campaign, you can integrate your
-            conversion data with Facebook conversion API and Offline
-            Conversion
-            Tracking directly.</p>
-          <div class="flex gap-4">
+  <!-- Understand how many sales -->
+  <section class="py-14 max-sm:py-7 ">
+    <div class="max-w-[1500px] px-3 mx-auto">
+      <div class="max-w-[991px] mb-5 mx-auto">
+        <h1
+          class="text-black text-[65px] max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+          Understand <span class="text-[#3B5998]">how many sales</span> are driven from your campaigns</h1>
+      </div>
+      <div class="flex-wrap flex">
+        <div class="w-5/12 flex flex-col justify-center max-lg:w-full">
+          <p class="text-dark max-lg:text-center">The issue with tracking marketing data in an online setting is that
+            you’re not getting
+            the full picture. Although you’re still making sales offline. it’s nearly impossible to track exactly what
+            online campaigns are doin the job, and which ones aren’t...until now.</p>
+          <p class="text-dark mt-5 max-lg:text-center">With Main Campaign, you can integrate your conversion data with
+            Facebook conversion
+            API and Offline Conversion Tracking directly.</p>
+          <div class="flex gap-4 mt-14">
             <button
-              class="text-xl font-bold px-[26px] py-3.5 bg-[#3B5998] text-white rounded-full leading-[140%] border-2 border-[#3b5998] hover:bg-[#FAF9F6]  hover:border-[#D9D9D9] hover:text-[#7D889E] transition-all duration-500">Get
+              class="bg-[#3B5998] hover:bg-white border hover:border-[#3B5998] hover:text-[#3B5998] transition-all duration-300 shadow-md mb-2 text-white font-bold py-3 px-6 rounded-[50px]">Get
               Started</button>
-            <p class="font-bold text-xs sm:text-lg leading-[155%]">Free 14 days trial. <br>
-              <span class="font-medium leading-[175%]">no credit card required</span>
-            </p>
+            <div class="flex flex-col">
+              <p class="font-bold text-lg">Free 14 days trial.</p>
+              <p class="font-medium">no credit card required</p>
+            </div>
           </div>
         </div>
-        <div class="w-6/12">
-          <img class="pb-24" src="./assets/image/webp/fb-page.webp" alt="fb-page">
+        <div class="w-7/12 max-lg:w-full ">
+          <img src="./assets/image/webp/fb-page.webp" alt="how-many-image" class="w-full">
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="max-w-[1673px] mx-auto justify-center flex flex-col items-center">
-      <h2
-        class="font-bold xl:text-[65px] lg:text-5xl sm:text-4xl text-2xl text-center mb-8 leading-[116%] max-w-[1333px]">
-        With Main Campaign, <span class="text-[#3B5998]">Your Privacy Matters</span></h2>
-      <div class="flex items-center text-center max-lg:flex-wrap gap-3">
-        <div class="w-3/12">
-          <div class="card-2 pt-8 pb-12 px-[26px] shadow-xl ">
-            <img class="pb-5 mb-0.5 mx-auto" src="./assets/image/svg/cursor-none.svg" alt="cursor">
-            <p class="font-bold md:text-xl text-sm text-[#3B5998] leading-[140%]">No Sharing</p>
-            <p class="sm:text-lg text-xs font-medium text-[#7D889E] max-w-[299px]">We Keep your information secure. We
-              will never share any lead data to other companies.</p>
+  <!--  Your Privacy Matters -->
+  <section class="py-14 max-sm:py-7 px-3">
+    <div class="max-w-[1333px] mb-5 mx-auto">
+      <h1
+        class="text-black text-65px max-xl:text-6xl pb-20 max-lg:pb-10 max-sm:pb-5 -mb-1.5 max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+        With Main Campaign, <span class="text-[#3B5998]"> Your Privacy Matters</span></h1>
+    </div>
+    <div class="max-w-[1573px] flex-wrap justify-center gap-y-6 gap-14 flex mx-auto">
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12 border border-solid border-[#3B5998] hover:border-transparent border-opacity-25 transition-all duration-300 hover:shadow--shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/image/svg/no-sharing.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-[#3B5998] text-xl font-bold max-lg:text-lg max-md:text-base text-center pb-4 -mt-0.5">No Sharing
+        </p>
+        <p class="font-medium text-center  text-xs md:text-lg text-[#7D889E]">We Keep your information secure. We will
+          never share any lead data
+          to other companies.</p>
+      </div>
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12 border border-solid border-[#3B5998] hover:border-transparent border-opacity-25 transition-all duration-300 hover:shadow--shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/image/svg/compliant-icon.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-[#3B5998] text-xl font-bold max-lg:text-lg max-md:text-base text-center pb-2 -mt-0.5">GDPR, CCPA,
+          PCI, Facebook, Google compliant</p>
+        <p class="font-medium text-center  text-xs md:text-lg text-[#7D889E]">Big Companies choose to work with us for a
+          reason. Get a trusted
+          partner that puts your security first.</p>
+      </div>
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  border border-solid border-[#3B5998] hover:border-transparent border-opacity-25 transition-all duration-300 hover:shadow--shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/image/svg/cyber-security-icon.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-[#3B5998] text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-4 -mt-0.5">Advanced
+          Security</p>
+        <p class="font-medium text-center  text-xs md:text-lg text-[#7D889E]">Laser-targeted segmentation, Local store
+          distribution, automation
+          rules and filters, and more. We put security first.</p>
+      </div>
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12 border border-solid border-[#3B5998] hover:border-transparent border-opacity-25 transition-all duration-300 hover:shadow--shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/image/svg/Marketing-icon.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-[#3B5998] text-xl font-bold max-lg:text-lg max-md:text-base text-center pb-4 -mt-0.5">
+          Conset-based Marketing</p>
+        <p class="font-medium text-center  text-xs md:text-lg text-[#7D889E]">Making conset-based marketing the most
+          scalable, efficient, and
+          safest method for customer acquistion.</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- revenue with Main Campaign -->
+  <section class="pt-36 max-xl:pt-28 max-lg:pt-20 max-md:pt-14">
+    <div class="container overflow-hidden pb-14 xl:max-w-[1600px]">
+      <div class="text-center pb-20">
+        <h2
+          class="text-6xl font-bold max-w-[887px] mx-auto leading-lg max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
+          Businesses generate more revenue with Main Campaign</h2>
+      </div>
+      <div class="slider mt-10 gap-7 max-sm:mx-4">
+        <div
+          class="bg-[#3B5998] rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-lg:min-w-[390px]  min-w-[476px] pt-2">
+          <div
+            class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-lg:w-[390px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+            <div class="flex flex-col items-center">
+              <img
+                class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-24 shadow-slider-box rounded-full"
+                src="./assets/image/svg/next-tech.svg" alt="img">
+            </div>
+            <p class="text-2xl font-bold text-start">Next Technologies</p>
+            <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.” </p>
+            <div class="flex gap-3 items-center mt-8">
+              <img class="size-[58px]" src="./assets/image/webp/slide-user-1.webp" alt="img">
+              <div>
+                <p class="text-2xl font-bold">James</p>
+                <p class="text-sm font-medium">Co-Founder at Slash next technologies.</p>
+              </div>
+            </div>
+            <div class="border border-iron max-w-[419px] rounded-full my-7"></div>
+            <button
+              class="text-sm text-center font-bold border border-transparent max-w-[173px] mx-auto mb-7 text-white rounded-full py-2 px-[50px] duration-300 ease-linear bg-[#3B5998] hover:bg-white hover:border-[#3B5998] hover:text-[#3B5998] shadow-button-shadow">Read
+              more</button>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="card-2 pt-8 pb-10 px-[26px] shadow-xl ">
-            <img class="pb-5 mb-0.5 mx-auto" src="./assets/image/svg/compliant-icon.svg" alt="cursor">
-            <p class="font-bold md:text-xl text-sm text-[#3B5998] leading-[140%] max-w-[308px]">GDPR, CCPA, PCI,
-              Facebook, Google compliant</p>
-            <p class="sm:text-lg text-xs font-medium text-[#7D889E] max-w-[299px]">Big Companies choose to work with us
-              for a reason. Get a trusted partner that puts your security first.</p>
+        <div
+          class="bg-[#3B5998] rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-lg:min-w-[390px]  min-w-[476px] pt-2">
+          <div
+            class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-lg:w-[390px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+            <div class="flex flex-col items-center">
+              <img
+                class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-24 shadow-slider-box rounded-full"
+                src="./assets/image/svg/code-sync.svg" alt="img">
+            </div>
+            <p class="text-2xl font-bold text-start">CodeSync Inc.</p>
+            <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.” </p>
+            <div class="flex gap-3 items-center mt-8">
+              <img class="size-[58px]" src="./assets/image/webp/slide-user-2.webp" alt="img">
+              <div>
+                <p class="text-2xl font-bold">Kathie</p>
+                <p class="text-sm font-medium">Director and Founder at CodeSync Inc.</p>
+              </div>
+            </div>
+            <div class="border border-iron max-w-[419px] rounded-full my-7"></div>
+            <button
+              class="text-sm text-center font-bold border border-transparent max-w-[173px] mx-auto mb-7 text-white rounded-full py-2 px-[50px] duration-300 ease-linear bg-[#3B5998] hover:bg-white hover:border-[#3B5998] hover:text-[#3B5998] shadow-button-shadow">Read
+              more</button>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="card-2 pt-8 pb-5 px-[26px] shadow-xl">
-            <img class="pb-5 mb-0.5 mx-auto" src="./assets/image/svg/cyber-security-icon.svg" alt="cursor">
-            <p class="font-bold md:text-xl text-sm text-[#3B5998] leading-[140%] max-w-[176px]">Advanced Security</p>
-            <p class="sm:text-lg text-xs font-medium text-[#7D889E] max-w-[299px]">Laser-targeted segmentation, Local
-              store distribution, automation rules and filters, and more. We put security first.</p>
+        <div
+          class="bg-[#3B5998] rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-lg:min-w-[390px] min-w-[476px] pt-2">
+          <div
+            class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-lg:w-[390px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+            <div class="flex flex-col items-center">
+              <img
+                class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-24 shadow-slider-box rounded-full"
+                src="./assets/image/svg/Urawarrior.svg" alt="img">
+            </div>
+            <p class="text-2xl font-bold text-start">Urawarrior</p>
+            <p class="max-w-[395px]">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.” </p>
+            <div class="flex gap-3 items-center mt-8">
+              <img class="size-[58px]" src="./assets/image/webp/slide-user-3.webp" alt="img">
+              <div>
+                <p class="text-2xl font-bold">Bershan Shaw</p>
+                <p class="text-sm font-medium">Founder at Urawarrior</p>
+              </div>
+            </div>
+            <div class="border border-iron max-w-[419px] rounded-full my-7"></div>
+            <button
+              class="text-sm text-center font-bold border border-transparent max-w-[173px] mx-auto mb-7 text-white rounded-full py-2 px-[50px] duration-300 ease-linear bg-[#3B5998] hover:bg-white hover:border-[#3B5998] hover:text-[#3B5998] shadow-button-shadow">Read
+              more</button>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="card-2 pt-8 pb-12 px-[26px] shadow-xl">
-            <img class="pb-5 mb-0.5 mx-auto" src="./assets/image/svg/insurance-icon.svg" alt="cursor">
-            <p class="font-bold md:text-xl text-sm text-[#3B5998] leading-[140%] max-w-[231px]">Conset-based Marketing
-            </p>
-            <p class="sm:text-lg text-xs font-medium text-[#7D889E] max-w-[299px]">Making conset-based marketing the
-              most scalable, efficient, and safest method for customer acquistion.</p>
+        <div
+          class="bg-[#3B5998] rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-lg:min-w-[390px] min-w-[476px] pt-2">
+          <div
+            class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-lg:w-[390px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+            <div class="flex flex-col items-center">
+              <img
+                class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-24 shadow-slider-box rounded-full"
+                src="./assets/image/svg/code-sync.svg" alt="img">
+            </div>
+            <p class="text-2xl font-bold text-start">CodeSync Inc.</p>
+            <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.” </p>
+            <div class="flex gap-3 items-center mt-8">
+              <img class="size-[58px]" src="./assets/image/webp/slide-user-1.webp" alt="img">
+              <div>
+                <p class="text-2xl font-bold">Kathie</p>
+                <p class="text-sm font-medium">Director and Founder at CodeSync Inc.</p>
+              </div>
+            </div>
+            <div class="border border-iron max-w-[419px] rounded-full my-7"></div>
+            <button
+              class="text-sm text-center font-bold border border-transparent max-w-[173px] mx-auto mb-7 text-white rounded-full py-2 px-[50px] duration-300 ease-linear bg-[#3B5998] hover:bg-white hover:border-[#3B5998] hover:text-[#3B5998] shadow-button-shadow">Read
+              more</button>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- are u ready to scale -->
+  <section class="py-14 max-sm:py-7 -mt-5 relative max-w-[1920px] overflow-hidden mx-auto px-3">
+    <img src="./assets/image/webp/footer-layer.webp" alt="footer-layer" class="absolute -z-10 -bottom-[25%] left-0 max-md:hidden">
+    <div class="max-w-[887px] flex flex-col items-center mb-5 mx-auto">
+      <h1
+        class="text-black text-[65px] max-xl:text-6xl pb-7 mb-0.5 max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+        Are you ready to scale?</h1>
+      <button
+        class="bg-[#3B5998] hover:bg-white border border-transparent hover:border-[#3B5998] hover:text-[#3B5998] transition-all duration-300 text-white font-medium text-base max-md:text-sm rounded-[60px] px-3 py-1 sm:py-5 sm:px-7">Start
+        My Free
+        Trial</button>
+    </div>
+    <div class="container relative flex justify-center rounded-[31px]">
+      <img class="shadow-leads-center rounded-[31px] max-sm:rounded-xl max-md:w-9/12"
+        src="./assets/image/webp/lead-dashboard.webp" alt="leads-center">
+      <img class="shadow-jhon-data absolute top-[54%] max-2xl:hidden left-[18%]"
+        src="./assets/image/webp/lead-dashboard-2.webp" alt="john-wick-data">
+    </div>
+  </section>
+  <!-- footer slider -->
+  <section class="bg-[#FAF9F6]">
+    <div class="container py-16 relative">
+      <div class="absolute -left-11 top-[35%] group max-xl:hidden">
+        <button
+          class="prev items-center flex justify-center bg-[#EEEEEC] group-hover:bg-[#3B5998] size-[35px] rounded-full cursor-pointer"
+          aria-label="Previous Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.0457 19.5608C11.3269 19.2795 11.4849 18.8981 11.4849 18.5003C11.4849 18.1026 11.3269 17.7211 11.0457 17.4398L3.62073 10.0148L11.0457 2.58982C11.319 2.30692 11.4702 1.92801 11.4667 1.53472C11.4633 1.14142 11.3056 0.765204 11.0275 0.487091C10.7493 0.208979 10.3731 0.0512277 9.97983 0.0478097C9.58654 0.0443917 9.20764 0.195583 8.92473 0.468821L0.439233 8.95432C0.158026 9.23561 5.35296e-05 9.61707 5.35248e-05 10.0148C5.35201e-05 10.4126 0.158026 10.794 0.439233 11.0753L8.92473 19.5608C9.20603 19.842 9.58749 20 9.98523 20C10.383 20 10.7644 19.842 11.0457 19.5608Z"
+              fill="#3B5998" class="group-hover:fill-[#EEEEEC]" />
+          </svg>
+        </button>
+      </div>
+      <div class="slider-footer flex overflow-hidden gap-5">
+        <img src="./assets/image/svg/noguchn.svg" alt="noguchn" class="max-w-[117px] max-h-7">
+        <img src="./assets/image/svg/airbnb.svg" alt="noguchn" class="max-w-[118px] max-h-9">
+        <img src="./assets/image/svg/pro-business.svg" alt="noguchn" class="max-w-[117px] max-h-7">
+        <img src="./assets/image/svg/ariba.svg" alt="noguchn" class="max-w-[117px] max-h-8">
+        <img src="./assets/image/svg/idegine.svg" alt="noguchn" class="max-w-[117px] max-h-7">
+        <img src="./assets/image/svg/brooks.svg" alt="noguchn" class="max-w-[117px] max-h-3.5">
+        <img src="./assets/image/svg/lokuma.svg" alt="noguchn" class="max-w-[117px] max-h-7">
+        <img src="./assets/image/svg/island.svg" alt="noguchn" class="max-w-[117px] max-h-10">
+        <img src="./assets/image/svg/noguchn.svg" alt="noguchn" class="max-w-[117px] max-h-7">
+      </div>
+      <div class="absolute -right-11 top-[35%] group max-xl:hidden">
+        <button
+          class="next items-center flex justify-center bg-[#EEEEEC] group-hover:bg-[#3B5998] size-[35px] rounded-full cursor-pointer"
+          aria-label="Next Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.704443 19.5608C0.423236 19.2795 0.265263 18.8981 0.265263 18.5003C0.265263 18.1026 0.423236 17.7211 0.704443 17.4398L8.12944 10.0148L0.704442 2.58982C0.431205 2.30692 0.280014 1.92801 0.283431 1.53472C0.286849 1.14142 0.444601 0.765204 0.722714 0.487092C1.00083 0.208979 1.37704 0.0512277 1.77034 0.04781C2.16364 0.0443924 2.54254 0.195584 2.82544 0.468821L11.3109 8.95432C11.5921 9.23561 11.7501 9.61707 11.7501 10.0148C11.7501 10.4126 11.5921 10.794 11.3109 11.0753L2.82544 19.5608C2.54415 19.842 2.16269 20 1.76494 20C1.3672 20 0.985735 19.842 0.704443 19.5608Z"
+              fill="#3B5998" class="group-hover:fill-[#EEEEEC]" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-[#FAF9F6] max-lg:px-5">
+    <div class="border border-dashed max-w-[1600px] border-[#3B5998] mx-auto mb-16 max-md:mb-10 max-sm:mb-8"></div>
+    <div class="flex max-w-[1600px] mx-auto flex-wrap max-lg:justify-center max-lg:items-center px-3">
+      <div class="w-4/12 max-lg:w-full flex max-lg:justify-center max-lg:items-center max-lg:mb-5"> <a href="/"><img
+            src="./assets/image/svg/footer-logo.svg" alt="img"></a></div>
+      <div class="w-2/12 max-lg:w-6/12 flex-col flex max-lg:items-center gap-6 max-md:gap-3">
+        <p class="font-bold text-xl max-sm:text-lg">About Us</p>
+        <ul class="list-none flex flex-col gap-4 max-md:gap-2">
+          <li><a href="#home" class="text-base max-sm:text-sm text-smokyBlack hover:text-[#3B5998]">HOME</a>
+          </li>
+          <li><a href="#about-us" class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-[#3B5998]">About
+              us</a>
+          </li>
+          <li><a href="#pricing"
+              class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-[#3B5998]">Pricing</a>
+          </li>
+          <li><a href="#pricing" class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-[#3B5998]">Start
+              free
+              trial</a></li>
+        </ul>
+      </div>
+      <div class="w-2/12 max-lg:w-6/12 flex-col max-lg:items-center flex gap-6 max-md:gap-3">
+        <p class="font-bold text-xl max-md:text-lg">SUPPORT</p>
+        <ul class="list-none flex flex-col gap-4 max-md:gap-2">
+          <li><a href="#home" class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-[#3B5998]">Contact
+              us</a>
+          </li>
+          <li><a href="#about-us"
+              class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-[#3B5998]">FAQs</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-4/12 max-lg:w-full max-lg:justify-center max-lg:items-center flex flex-col gap-5 max-md:mt-3">
+        <p class="font-bold text-xl max-sm:text-lg">SUBSCRIBE</p>
+        <div class="flex flex-col gap-5">
+          <input type="email"
+            class="w-[477px] max-xl:w-full border p-5 rounded-2xl placeholder:text-[#0A0A0D] text-[#0A0A0D] outline-none border-[#E1E1FF] placeholder:font-light font-light placeholder:text-base text-base"
+            placeholder="Enter email address" required>
+          <p class="text-sm font-light leading-[150%] max-w-[477px]">By submitting your email you agree to our
+            Terms of Use
+            and Sale and
+            Privacy Policy. You
+            will receive email communications from us for marketing, informational, and promotional purposes
+            and can opt-out at any time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="border border-dashed max-w-[1600px] border-[#3B5998] mx-auto mt-16 max-md:mt-10 max-sm:mt-8"></div>
+    <div
+      class="max-w-[1600px] mx-auto py-12 max-lg:pt-9 max-lg:pb-6 max-md:py-8 max-sm:py-4 flex justify-between max-md:flex-col gap-6 max-md:justify-center max-md:items-center">
+      <a class="text-sm font-light" href="/">Privacy Policy • Terms & Conditions</a>
+      <div class="flex gap-4">
+
+        <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+          href="https://facebook.com" target="_blank"><img src="./assets/image/svg/facebook-icon.svg"
+            alt="facebook"></a>
+        <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+          href="https://instagram.com" target="_blank"><img src="./assets/image/svg/insta-icon.svg" alt="facebook"></a>
+
+        <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+          href="https://linkedin.com" target="_blank"><img src="./assets/image/svg/linkedln-icon.svg"
+            alt="facebook"></a>
+
+        <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+          href="https://www.cricbuzz.com/" target="_blank"><img src="./assets/image/svg/cb-icon.svg" alt="facebook"></a>
+
+      </div>
+    </div>
+  </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/app.js"></script>
 
 </html>
